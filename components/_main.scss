@@ -1,0 +1,40 @@
+.company-info {
+  width: 85%;
+  display: flex;
+  padding-top: 100px;
+
+  .title-area {
+    display: flex;
+    flex-basis: 60%;
+  }
+
+  .info-area {
+    display: flex;
+    flex-basis: 40%;
+    padding-left: 70px;
+  }
+
+  h2 {
+    padding-left: 200px;
+    font-size: $size5;
+  }
+
+  p {
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: $size1;
+  }
+}
+
+
+.pictures{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 100px 0 0 300px;
+
+  img{
+    width: 40%;
+  }
+
+}

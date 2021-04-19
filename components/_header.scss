@@ -1,0 +1,21 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  img{
+    height: 15px;
+  }
+  ul li{
+    display: inline-block;
+    padding-left: 15px;
+    a{
+      text-decoration: none;
+      color: #000;
+
+      &:hover{
+        border-bottom: 2px solid #EA9B82;
+      }
+    }
+  }
+}
