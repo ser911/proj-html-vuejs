@@ -1,9 +1,19 @@
 main{
-background-image: url("../images/h2-background-img-02.png");
 
+
+.wrapper{
+  width: 90%;
+  background-image: url("../images/h2-background-img-02.png"), url("../images/h2-background-img-01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top, -80px 350px;
+  background-clip: border-box;
+  overflow-x: visible;
 }
+
 .company-info {
   display: flex;
+  align-items: center;
   padding-top: 100px;
 
 
@@ -35,19 +45,56 @@ background-image: url("../images/h2-background-img-02.png");
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
-  padding: 100px 0 0 300px;
+  width: 70%;
+  margin: 0 auto 0 300px;
+  padding-top: 100px;
 
   img{
-    width: 40%;
+    width: 50%;
   }
-  .options{
-  padding-left: 300px;
-  width: 100%;
+
+}
+.options{
+  margin: 100px auto 0;
+  width: 70%;
+  display: flex;
+
+  .opt-left{
+    flex-basis: 50%;
+  }
+
+  .opt-right{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+
+    .opt-right-1, .opt-right-2, .opt-right-3, .opt-right-4 {
+      display: flex;
+      flex-basis: 50%;
+      align-items: center;
+      img{
+        padding-right: 25px;
+      }
+    }
 
   }
-  .options-left{
-  width: 40%;
-  }
+}
+.wallpaper{
+background-image: url("../images/h2-img-2.jpg");
+background-size: 100%, cover;
+background-repeat:repeat-y;
+background-position: 0 200px;
+width: 100%;
+min-height: 500px;
+text-align: center;
+position: relative;
+img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+}
+
 
 }

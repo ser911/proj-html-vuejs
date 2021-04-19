@@ -30,47 +30,82 @@ header ul li a:hover {
   border-bottom: 2px solid #EA9B82;
 }
 
-main {
-  background-image: url(/images/h2-background-img-02.png?9d6b3b8f7de20e72f0fde8dc72e25bb4);
+main .wrapper {
+  width: 90%;
+  background-image: url("../images/h2-background-img-02.png"), url("../images/h2-background-img-01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top, -80px 350px;
+  background-clip: border-box;
+  overflow-x: visible;
 }
-
-.company-info {
+main .company-info {
   display: flex;
+  align-items: center;
   padding-top: 100px;
 }
-.company-info .title-area {
+main .company-info .title-area {
   display: flex;
   flex-basis: 60%;
 }
-.company-info .info-area {
+main .company-info .info-area {
   display: flex;
   flex-basis: 40%;
   padding-left: 70px;
 }
-.company-info h2 {
+main .company-info h2 {
   padding-left: 200px;
   font-size: 40px;
 }
-.company-info p {
+main .company-info p {
   padding-right: 100px;
   padding-top: 10px;
   font-size: 12px;
 }
-
-.pictures {
+main .pictures {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
-  padding: 100px 0 0 300px;
+  width: 70%;
+  margin: 0 auto 0 300px;
+  padding-top: 100px;
 }
-.pictures img {
-  width: 40%;
+main .pictures img {
+  width: 50%;
 }
-.pictures .options {
-  padding-left: 300px;
+main .options {
+  margin: 100px auto 0;
+  width: 70%;
+  display: flex;
+}
+main .options .opt-left {
+  flex-basis: 50%;
+}
+main .options .opt-right {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+main .options .opt-right .opt-right-1, main .options .opt-right .opt-right-2, main .options .opt-right .opt-right-3, main .options .opt-right .opt-right-4 {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+}
+main .options .opt-right .opt-right-1 img, main .options .opt-right .opt-right-2 img, main .options .opt-right .opt-right-3 img, main .options .opt-right .opt-right-4 img {
+  padding-right: 25px;
+}
+main .wallpaper {
+  background-image: url("../images/h2-img-2.jpg");
+  background-size: 100%, cover;
+  background-repeat: repeat-y;
+  background-position: 0 200px;
   width: 100%;
+  min-height: 500px;
+  text-align: center;
+  position: relative;
 }
-.pictures .options-left {
-  width: 40%;
+main .wallpaper img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
