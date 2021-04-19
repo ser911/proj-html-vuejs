@@ -16,6 +16,7 @@ header {
 }
 header img {
   height: 15px;
+  cursor: pointer;
 }
 header ul li {
   display: inline-block;
@@ -30,7 +31,6 @@ header ul li a:hover {
 }
 
 .company-info {
-  width: 85%;
   display: flex;
   padding-top: 100px;
 }
@@ -48,7 +48,7 @@ header ul li a:hover {
   font-size: 40px;
 }
 .company-info p {
-  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 10px;
   font-size: 12px;
 }
@@ -56,9 +56,17 @@ header ul li a:hover {
 .pictures {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 80%;
   padding: 100px 0 0 300px;
 }
 .pictures img {
+  width: 40%;
+}
+.pictures .options {
+  padding-left: 300px;
+  width: 100%;
+}
+.pictures .options-left {
   width: 40%;
 }
