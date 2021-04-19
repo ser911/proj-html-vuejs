@@ -30,6 +30,10 @@ header ul li a:hover {
   border-bottom: 2px solid #EA9B82;
 }
 
+main {
+  background-image: url(/images/h2-background-img-02.png?9d6b3b8f7de20e72f0fde8dc72e25bb4);
+}
+
 .company-info {
   display: flex;
   padding-top: 100px;
