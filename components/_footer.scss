@@ -1,0 +1,41 @@
+footer{
+  display: flex;
+  .input-form{
+    flex-basis: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .f-left, .f-right{
+      padding: 30px;
+
+    }
+  }
+  .f-left{
+    text-align: justify;
+    flex-basis: 40%;
+    h2{
+      font-size: $size5;
+      padding-bottom: 25px;
+    }
+  }
+  .f-right{
+
+      input{
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid black;
+        width: 45%;
+
+        &:focus{
+          outline: none!important;
+
+        }
+      }
+
+    input:first-child{
+      display: block;
+      width: 90%;
+    }
+  }
+}

@@ -74,7 +74,7 @@ main .pictures img {
   width: 50%;
 }
 main .options {
-  margin: 100px auto 0;
+  margin: 100px auto 0 300px;
   width: 70%;
   display: flex;
 }
@@ -98,9 +98,9 @@ main .wallpaper {
   background-image: url("../images/h2-img-2.jpg");
   background-size: 100%, cover;
   background-repeat: repeat-y;
-  background-position: 0 200px;
+  background-position: 0 150px;
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   text-align: center;
   position: relative;
 }
@@ -108,4 +108,68 @@ main .wallpaper img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
+}
+main .plans {
+  padding: 50px 0;
+  text-align: center;
+}
+main .plans .plan-1, main .plans .plan-2, main .plans .plan-3 {
+  border-radius: 10px;
+  padding: 60px 30px 90px;
+  display: inline-block;
+  margin-left: 30px;
+  height: 400px;
+  width: 250px;
+}
+main .plans .plan-1 h2, main .plans .plan-2 h2, main .plans .plan-3 h2 {
+  padding: 10px 0 30px;
+}
+main .plans .plan-1 ul li, main .plans .plan-2 ul li, main .plans .plan-3 ul li {
+  list-style-type: none;
+  padding: 8px;
+}
+main .plans .plan-1 {
+  border: 1px solid #efca9e;
+}
+main .plans .plan-2 {
+  border: 1px solid #e6f3f0;
+  background-color: #e6f3f0;
+}
+main .plans .plan-3 {
+  border: 1px solid #ea9b82;
+}
+
+footer {
+  display: flex;
+}
+footer .input-form {
+  flex-basis: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+footer .input-form .f-left, footer .input-form .f-right {
+  padding: 30px;
+}
+footer .f-left {
+  text-align: justify;
+  flex-basis: 40%;
+}
+footer .f-left h2 {
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+footer .f-right input {
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 45%;
+}
+footer .f-right input:focus {
+  outline: none !important;
+}
+footer .f-right input:first-child {
+  display: block;
+  width: 90%;
 }
