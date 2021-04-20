@@ -69,9 +69,10 @@ main{
     padding-left: 100px;
 
     .opt-right-1, .opt-right-2, .opt-right-3, .opt-right-4 {
-      display: flex;
+      // display: flex;
       flex-basis: 50%;
-      align-items: center;
+      // align-items: center;
+      @include myFLex;
       img{
         padding-right: 25px;
       }
