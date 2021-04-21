@@ -6,11 +6,22 @@
 $size1: 12px;
 $size2: 14px;
 $size3: 18px;
-$size4: 32px;
-$size5: 40px;
+$size4: 24px;
+$size5: 32px;
+$size6: 40px;
 
 // MIXINS
 @mixin myFLex  {
   display: flex;
   align-items: center;
   }
+@mixin myButton{
+  border: 1px solid #80abae;
+  border-radius: 35%;
+  background-color: transparent;
+  padding: 12px 36px;
+  }
+
+// COLORS
+
+// background-colors

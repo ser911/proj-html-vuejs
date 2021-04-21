@@ -30,13 +30,14 @@ main{
 
   h2 {
     padding-left: 200px;
-    font-size: $size5;
+    font-size: $size6;
   }
 
   p {
     padding-right: 100px;
     padding-top: 10px;
     font-size: $size1;
+
   }
 }
 
@@ -48,9 +49,30 @@ main{
   width: 70%;
   margin: 0 auto 0 300px;
   padding-top: 100px;
+  .frame{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
 
   img{
     width: 50%;
+  }
+  .pic-react{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200px;
+    height:  200px;
+    background-color: #fff;
+
+    .arrow{
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid green;
+    }
   }
 
 }
@@ -61,17 +83,35 @@ main{
 
   .opt-left{
     flex-basis: 50%;
+    h3{
+      font-size: $size4;
+
+    }
+    p{
+      font-size: $size2;
+      padding-top: 20px;
+
+    }
+    button{
+      @include myButton;
+      margin-top: 20px;
+
+
+      &:hover{
+        color: #fff;
+        background-color: #80abae;
+      }
+    }
   }
 
   .opt-right{
     display: flex;
     flex-wrap: wrap;
     padding-left: 100px;
+    font-size: $size3;
 
     .opt-right-1, .opt-right-2, .opt-right-3, .opt-right-4 {
-      // display: flex;
       flex-basis: 50%;
-      // align-items: center;
       @include myFLex;
       img{
         padding-right: 25px;
@@ -117,6 +157,10 @@ img{
     width: 250px;
     h2{
       padding: 10px 0 30px;
+      font-size: $size4;
+    }
+    h4{
+      font-size: $size3;
     }
 
 
@@ -124,6 +168,11 @@ img{
 ul li{
   list-style-type: none;
   padding: 8px;
+  font-size: $size1;
+}
+button{
+  @include myButton;
+  margin-top: 10px;
 }
   }
   .plan-1{

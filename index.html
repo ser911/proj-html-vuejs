@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -17,14 +18,10 @@
   <!-- HEADER -->
   <header>
     <img src="images/logo-img-01.png" alt="">
-    <ul>
-      <li><a href="#">Prova</a></li>
-      <li><a href="#">Prova</a></li>
-      <li><a href="#">Prova</a></li>
-      <li><a href="#">Prova</a></li>
-      <li><a href="#">Prova</a></li>
-      <li><a href="#">Prova</a></li>
-      <li><a href="#">Prova</a></li>
+    <ul id="app">
+      <li v-for="item in navBar"><a href="#">{{item.element}}</a></li>
+      <!-- <img src="images/svg-1.svg" alt=""> -->
+
     </ul>
   </header>
   <!-- /HEADER -->
@@ -38,22 +35,30 @@
 
       </div>
       <div class="info-area">
-        <p>Here at Bryson it only takes a smidgen of imagination and we've already prepared ourselves for future challenges. Take a peek and see if you recognize the trademark ingredients of our work.</p>
+        <p class="line-air">Here at Bryson it only takes a smidgen of imagination and we've already prepared ourselves for future challenges. Take a peek and see if you recognize the trademark ingredients of our work.</p>
 
       </div>
     </section>
-    <div class="pictures">
-      <img src="images/port-img-07.jpg" alt="">
-      <img src="images/port-img-08.jpg" alt="">
-      <img src="images/port-img-09.jpg" alt="">
-      <img src="images/port-img-10.jpg" alt="">
-      <img src="images/port-img-11.jpg" alt="">
-      <img src="images/port-img-12.jpg" alt="">
-    </div>
+    <section class="pictures">
+      <div class="frame">
+        <img src="images/port-img-07.jpg" alt="">
+        <img src="images/port-img-08.jpg" alt="">
+        <img src="images/port-img-09.jpg" alt="">
+        <img src="images/port-img-10.jpg" alt="">
+        <img src="images/port-img-11.jpg" alt="">
+        <img src="images/port-img-12.jpg" alt="">
+        <!-- <div class="pic-react">
+<div class="arrow">
+
+</div>
+      </div> -->
+
+      </div>
+    </section>
     <div class="options">
       <div class="opt-left">
         <h3>What we do</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <p class="line-air">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         <button type="button" name="button">Read more</button>
 
       </div>
@@ -91,6 +96,7 @@
       <li>Top level creatives</li>
       <li>No money back</li>
     </ul>
+    <button type="button" name="button">Learn more</button>
 
   </div>
   <div class="plan-2">
@@ -103,6 +109,7 @@
       <li>Top level creatives</li>
       <li>No money back</li>
     </ul>
+    <button type="button" name="button">Learn more</button>
   </div>
 <div class="plan-3">
   <h4>Basic</h4>
@@ -114,6 +121,7 @@
     <li>Top level creatives</li>
     <li>No money back</li>
   </ul>
+  <button type="button" name="button">Learn more</button>
 </div>
 </div>
   </main>
@@ -124,7 +132,7 @@
   <section class="input-form">
     <div class="f-left">
       <h2>Get in touch <br> and say Hello</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="line-air">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="f-right">
       <form class="" action="index.html" method="post">
@@ -142,17 +150,27 @@
   <section class="socials-wrapper">
     <div class="socials">
       <h3>Bryson</h3>
-      <p>Sometimes doing something seemingly demanding turns out to be fun.
+      <p class="line-air">Sometimes doing something seemingly demanding turns out to be fun.
         Here's the proof - Bryson, your brand new portfolio. </p>
+        <ul id="app2">
+          <li v-for="i in social_icons1">
+
+
+
+          <!-- <i class="fab fa-instagram-square" v-if ="i.social == 'ig'" ></i> -->
+          <!-- <i v-else-if="social_icons.social =='fb'" class="fab fa-facebook-f"></i>
+          <i v-else-if="social_icons.social =='tw'" class="fab fa-twitter"></i>
+          <i v-else-if ="social_icons.social == 'pt'" class="fab fa-pinterest-p"></i> -->
+
+           <a href="#">{{i.icon}}</a></li>
+
+
+        </ul>
       </div>
 
   </section>
 </footer>
-  <!-- /FOOTER -->
-
-  <h1></h1>
+<script src="myscript.js" charset="utf-8"></script>  <!-- /FOOTER -->
 </body>
-
-</html></body>
 
 </html>
