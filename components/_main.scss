@@ -53,7 +53,13 @@ main{
     display: flex;
     flex-wrap: wrap;
     position: relative;
+
+    &:hover .pic-react{
+      display: block;
+    }
+
   }
+
 
   img{
     width: 50%;
@@ -65,17 +71,51 @@ main{
     width: 200px;
     height:  200px;
     background-color: #fff;
+    display: none;
+
 
     .arrow{
   width: 0;
   height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid green;
+  border-top-width: calc(200px * 1.414);
+  border-bottom: 200px solid transparent;
+  border-left: 200px solid #eac3ad;
+  transform: rotate(180deg);
+
+  .arrow-text{
+  position: absolute;
+  right: 90px;
+  top: 40px;
+  height: 120px;
+  width: 120px;
+
+  }
+  #free, #book{
+    display: block;
+    transform: rotate(135deg);
+    &:hover{
+      color: #629c7c;
+
+    }
+  }
+  #free{
+    margin: 10px -13px 0 0;
+    padding-bottom: 20px;
+    font-size: $size3;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #book{
+    font-size: $size1;
+    padding-left: 18px;
+    cursor: pointer;
+  }
     }
   }
 
 }
+
+
 .options{
   margin: 100px auto 0 300px;
   width: 70%;

@@ -80,6 +80,9 @@ main .pictures .frame {
   flex-wrap: wrap;
   position: relative;
 }
+main .pictures .frame:hover .pic-react {
+  display: block;
+}
 main .pictures img {
   width: 50%;
 }
@@ -90,13 +93,41 @@ main .pictures .pic-react {
   width: 200px;
   height: 200px;
   background-color: #fff;
+  display: none;
 }
 main .pictures .pic-react .arrow {
   width: 0;
   height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid green;
+  border-top-width: calc(200px * 1.414);
+  border-bottom: 200px solid transparent;
+  border-left: 200px solid #eac3ad;
+  transform: rotate(180deg);
+}
+main .pictures .pic-react .arrow .arrow-text {
+  position: absolute;
+  right: 90px;
+  top: 40px;
+  height: 120px;
+  width: 120px;
+}
+main .pictures .pic-react .arrow #free, main .pictures .pic-react .arrow #book {
+  display: block;
+  transform: rotate(135deg);
+}
+main .pictures .pic-react .arrow #free:hover, main .pictures .pic-react .arrow #book:hover {
+  color: #629c7c;
+}
+main .pictures .pic-react .arrow #free {
+  margin: 10px -13px 0 0;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+main .pictures .pic-react .arrow #book {
+  font-size: 12px;
+  padding-left: 18px;
+  cursor: pointer;
 }
 main .options {
   margin: 100px auto 0 300px;
