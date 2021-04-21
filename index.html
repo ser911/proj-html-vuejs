@@ -152,8 +152,9 @@
       <h3>Bryson</h3>
       <p class="line-air">Sometimes doing something seemingly demanding turns out to be fun.
         Here's the proof - Bryson, your brand new portfolio. </p>
-        <ul id="app2">
-          <li v-for="i in social_icons1">
+
+        <div id="app2">
+          <div class="icon-cont" v-for="i in social_icons">
 
 
 
@@ -162,10 +163,11 @@
           <i v-else-if="social_icons.social =='tw'" class="fab fa-twitter"></i>
           <i v-else-if ="social_icons.social == 'pt'" class="fab fa-pinterest-p"></i> -->
 
-           <a href="#">{{i.icon}}</a></li>
+           <img :src="'icons/' + i.icon" alt="">
+         </div>
 
 
-        </ul>
+        </div>
       </div>
 
   </section>
