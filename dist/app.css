@@ -32,7 +32,7 @@ header ul li {
 }
 header ul li a {
   text-decoration: none;
-  color: #000;
+  color: #1a706a;
   font-size: 14px;
 }
 header ul li a:hover {
@@ -72,6 +72,7 @@ main .company-info p {
   padding-top: 10px;
   font-size: 12px;
   font-weight: 400;
+  color: #6d6e71;
 }
 main .pictures {
   display: flex;
@@ -150,6 +151,7 @@ main .options .opt-left h3 {
 main .options .opt-left p {
   font-size: 14px;
   padding-top: 20px;
+  color: #6d6e71;
 }
 main .options .opt-left button {
   border: 1px solid #80abae;
@@ -221,6 +223,7 @@ main .plans .plan-1 ul li, main .plans .plan-2 ul li, main .plans .plan-3 ul li 
   list-style-type: none;
   padding: 8px;
   font-size: 12px;
+  color: #6d6e71;
 }
 main .plans .plan-1 button, main .plans .plan-2 button, main .plans .plan-3 button {
   border: 1px solid #80abae;
@@ -264,6 +267,7 @@ footer .f-left h2 {
 }
 footer .f-left p {
   font-size: 12px;
+  color: #1a706a;
 }
 footer .f-right input {
   margin-bottom: 20px;
@@ -302,6 +306,10 @@ footer .socials-wrapper .socials {
 }
 footer .socials-wrapper .socials h3 {
   font-size: 18px;
+  padding-bottom: 20px;
+}
+footer .socials-wrapper .socials p {
+  color: #1a706a;
 }
 footer .socials-wrapper .socials #app2 .icon-cont {
   display: inline-block;

@@ -17,7 +17,7 @@ footer {
     text-align: justify;
     flex-basis: 40%;
     color: #1a706a;
-    
+
 
     h2 {
       font-size: $size5;
@@ -26,6 +26,8 @@ footer {
 
     p {
       font-size: $size1;
+      color: #1a706a;
+
     }
   }
 
@@ -68,8 +70,10 @@ footer {
 
       h3 {
         font-size: $size3;
+        padding-bottom: 20px;
       }
       p{
+        color: #1a706a;
 
       }
       #app2{
