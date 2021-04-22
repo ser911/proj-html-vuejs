@@ -4,9 +4,9 @@ main{
 .wrapper{
   width: 90%;
   background-image: url("../images/h2-background-img-02.png"), url("../images/h2-background-img-01.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top, -80px 350px;
+  background-size: contain, 88%;
+  background-repeat: no-repeat, repeat-x;
+  background-position: top, -20px 260px;
   background-clip: border-box;
   overflow-x: visible;
 }
@@ -31,13 +31,14 @@ main{
   h2 {
     padding-left: 200px;
     font-size: $size6;
+    color: #1a706a;
   }
 
   p {
     padding-right: 100px;
     padding-top: 10px;
     font-size: $size1;
-
+    font-weight: 400;
   }
 }
 
@@ -46,8 +47,8 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
-  margin: 0 auto 0 300px;
+  width: 60%;
+  margin: 0 auto;
   padding-top: 100px;
   .frame{
     display: flex;
@@ -117,12 +118,13 @@ main{
 
 
 .options{
-  margin: 100px auto 0 300px;
-  width: 70%;
+  margin: 100px auto 0;
+  width: 60%;
   display: flex;
 
   .opt-left{
     flex-basis: 50%;
+    color: #1a706a;
     h3{
       font-size: $size4;
 
@@ -149,6 +151,8 @@ main{
     flex-wrap: wrap;
     padding-left: 100px;
     font-size: $size3;
+    color: #1a706a;
+
 
     .opt-right-1, .opt-right-2, .opt-right-3, .opt-right-4 {
       flex-basis: 50%;
@@ -195,6 +199,8 @@ img{
     margin-left: 30px;
     height: 400px;
     width: 250px;
+    color: #1a706a;
+    
     h2{
       padding: 10px 0 30px;
       font-size: $size4;

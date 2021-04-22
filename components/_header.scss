@@ -7,11 +7,15 @@ header {
   img {
     height: 15px;
     cursor: pointer;
+    transition: transform 0.5s;
+    &:hover{
+      transform: scale(1.7);
+    }
   }
 
   ul li {
     display: inline-block;
-    padding-left: 15px;
+    padding-right: 15px;
 
     a {
       text-decoration: none;

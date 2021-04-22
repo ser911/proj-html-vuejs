@@ -21,10 +21,14 @@ header {
 header img {
   height: 15px;
   cursor: pointer;
+  transition: transform 0.5s;
+}
+header img:hover {
+  transform: scale(1.7);
 }
 header ul li {
   display: inline-block;
-  padding-left: 15px;
+  padding-right: 15px;
 }
 header ul li a {
   text-decoration: none;
@@ -38,9 +42,9 @@ header ul li a:hover {
 main .wrapper {
   width: 90%;
   background-image: url("../images/h2-background-img-02.png"), url("../images/h2-background-img-01.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top, -80px 350px;
+  background-size: contain, 88%;
+  background-repeat: no-repeat, repeat-x;
+  background-position: top, -20px 260px;
   background-clip: border-box;
   overflow-x: visible;
 }
@@ -61,18 +65,20 @@ main .company-info .info-area {
 main .company-info h2 {
   padding-left: 200px;
   font-size: 40px;
+  color: #1a706a;
 }
 main .company-info p {
   padding-right: 100px;
   padding-top: 10px;
   font-size: 12px;
+  font-weight: 400;
 }
 main .pictures {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
-  margin: 0 auto 0 300px;
+  width: 60%;
+  margin: 0 auto;
   padding-top: 100px;
 }
 main .pictures .frame {
@@ -130,12 +136,13 @@ main .pictures .pic-react .arrow #book {
   cursor: pointer;
 }
 main .options {
-  margin: 100px auto 0 300px;
-  width: 70%;
+  margin: 100px auto 0;
+  width: 60%;
   display: flex;
 }
 main .options .opt-left {
   flex-basis: 50%;
+  color: #1a706a;
 }
 main .options .opt-left h3 {
   font-size: 24px;
@@ -146,9 +153,10 @@ main .options .opt-left p {
 }
 main .options .opt-left button {
   border: 1px solid #80abae;
-  border-radius: 35%;
+  border-radius: 16px;
   background-color: transparent;
-  padding: 12px 36px;
+  padding: 10px 20px;
+  cursor: pointer;
   margin-top: 20px;
 }
 main .options .opt-left button:hover {
@@ -160,6 +168,7 @@ main .options .opt-right {
   flex-wrap: wrap;
   padding-left: 100px;
   font-size: 18px;
+  color: #1a706a;
 }
 main .options .opt-right .opt-right-1, main .options .opt-right .opt-right-2, main .options .opt-right .opt-right-3, main .options .opt-right .opt-right-4 {
   flex-basis: 50%;
@@ -199,6 +208,7 @@ main .plans .plan-1, main .plans .plan-2, main .plans .plan-3 {
   margin-left: 30px;
   height: 400px;
   width: 250px;
+  color: #1a706a;
 }
 main .plans .plan-1 h2, main .plans .plan-2 h2, main .plans .plan-3 h2 {
   padding: 10px 0 30px;
@@ -214,9 +224,10 @@ main .plans .plan-1 ul li, main .plans .plan-2 ul li, main .plans .plan-3 ul li 
 }
 main .plans .plan-1 button, main .plans .plan-2 button, main .plans .plan-3 button {
   border: 1px solid #80abae;
-  border-radius: 35%;
+  border-radius: 16px;
   background-color: transparent;
-  padding: 12px 36px;
+  padding: 10px 20px;
+  cursor: pointer;
   margin-top: 10px;
 }
 main .plans .plan-1 {
@@ -245,6 +256,7 @@ footer .input-form .f-right {
 footer .f-left {
   text-align: justify;
   flex-basis: 40%;
+  color: #1a706a;
 }
 footer .f-left h2 {
   font-size: 32px;
@@ -269,9 +281,10 @@ footer .f-right input:first-child {
 }
 footer .f-right button {
   border: 1px solid #80abae;
-  border-radius: 35%;
+  border-radius: 16px;
   background-color: transparent;
-  padding: 12px 36px;
+  padding: 10px 20px;
+  cursor: pointer;
   margin-top: 20px;
 }
 footer .socials-wrapper {
@@ -297,5 +310,10 @@ footer .socials-wrapper .socials #app2 .icon-cont {
   padding-top: 30px;
 }
 footer .socials-wrapper .socials #app2 img {
-  max-height: 30px;
+  max-height: 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+footer .socials-wrapper .socials #app2 img:hover {
+  transform: scale(1.5);
 }

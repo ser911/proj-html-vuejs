@@ -16,6 +16,8 @@ footer {
   .f-left {
     text-align: justify;
     flex-basis: 40%;
+    color: #1a706a;
+    
 
     h2 {
       font-size: $size5;
@@ -80,7 +82,14 @@ footer {
 }
 
           img{
-            max-height: 30px;
+            max-height: 20px;
+            cursor: pointer;
+            transition: transform 0.5s;
+
+
+            &:hover{
+              transform: scale(1.5);
+            }
           }
 
 
